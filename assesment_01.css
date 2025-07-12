@@ -2,23 +2,34 @@
 body {
     background-color: rgba(241, 252, 255, 0.925);
 }
+.navbar
+{
+    display: flex;
+    margin: auto;
+    
+}
 nav{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     padding: 0 50px;
+    height: 70px;
+}
+.logo
+{
+    color: rgb(69, 69, 150);
+    line-height: 20px;
+    font-size: 30px;
 }
 .button-signup
 {
-   padding:8px 16px;
-   border: none;
-   border-radius: 5px;
-}
-.button-signup:hover{
-    background-color: rgb(178, 202, 223);
-    color: rgba(12, 13, 14, 0.637);
     border: none;
-    transition: 2s;
+    color:white ;
+    background-color: #6a5ddf;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 25px;
 }
 .button-01
 {
@@ -45,29 +56,36 @@ nav{
     text-align: center;
 }
 .action {
-  display: flex;
-  align-items: center; 
-  justify-content: space-between; 
-  max-width: 1140px; 
-  margin: 0 auto; 
-  padding: 0 20px; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
 }
 
 .text-div {
+    display: block;
   text-align: left;
-  flex-basis: 50%;
+  width: 50%;
 }
 .text-div h2{
-    font-size: 45px;
+    font-size: 35px;
 }
 .text-div p{
-    font-size: 28px;
+    font-size: 20px;
+}
+.action-image
+{
+    border-radius: 20px;
+    height: 300px;
 }
 .buttion-action
 {
-    padding: 10px 20px;
-    background-color: rgb(116, 116, 202);
-    font-size: 25px;
+    padding: 10px 10px;
+    background-color: rgb(102, 102, 204);
+    font-size: 15px;
     border: none;
     border-radius: 10px;
 }
@@ -77,26 +95,30 @@ nav{
 }
 .user-information
 {
-    text-align: center;
+    text-align:center;
+}
+.user-information  p
+{
+    font-size: 20px;
 }
 .productive
 {
-    width: 1140px;
-    margin: auto;.
-    
+    margin: auto;
 }
 .productive-user
 {
     display: flex;
     text-align: center;
     justify-content:space-between;
-
+    padding: 0px 30px;
+    margin: auto;
 }
 .productive-container
 {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    margin: auto;
 }
 .user-persuation
 {
@@ -105,75 +127,26 @@ nav{
 }
 .user-information h1
 {
-    font-size: 55px;
+    font-size:35px;
     color: blue;
 }
 .user-information p{
 font-size: 25px;
 }
-/*------------------user review -------------------*/
-.name-date{
-    display: block;
-    color: goldenrod;
-}
-.users-info
-{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.reviewer-image
-{
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-}
-.text
-{
-    display: block;
-    color: #d8a3a3;
-    justify-content: center;
-    text-align: left;
-}
-.user-review
-{
-    display: block;
-}
-.review-content
-{
-    width: 200px;
-    justify-content: space-between;
-    background-color: rgb(242, 253, 253);
-    padding: 20px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.review
-{
-    display: flex;
-    justify-content: space-between;
-}
-.review-title
-{
-    text-align: center;
-    font-size: 25px;
-    padding: 20px;
-}
-.customer-review
-{
-    display: block;
-    align-items: center;
-    background-color: rgb(240, 236, 245);
-    border-radius: 25px;
-}
 /*--------------------focus-----------------*/
-.focus-better
-{
-    display:block;
-    align-items:center;
-    width: 1140px;
+.focus{
+    display: block;
+    align-items: center;
     text-align: center;
-    justify-content: space-between;
+    width: auto;
+    margin: auto;
+}
+.focus img
+{
+    display: block;
+    justify-content: space-around;
+    width:90%;
+    padding: 20px;
     margin: auto;
 }
 .button-02
@@ -186,23 +159,100 @@ font-size: 25px;
     text-align: center;
     justify-content: space-between;
 }
-.focus-image
+.focus-container
 {
-    width: 1140px;
+    display: block;
+    margin: auto;
+}
+/*------------------user review -------------------*/
+.name-date{
+    display: block;
+    color: rgb(10, 10, 10);
+}
+.users-info
+{
     display: flex;
+    gap: 20px;
     align-items: center;
-    text-align: center;
+}
+.reviewer-image
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+
+}
+.text
+{
+    display: block;
+    color: #000000;
     justify-content: center;
+    text-align: left;
+}
+.user-review
+{
+    display: block;
+}
+.review-title
+{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+.star-icon
+{
+    display: block;
+    margin: 10px;
+}
+.user-review
+{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    display: block;
+    text-align: left;
+    height: 320px;
+}
+.review-content
+{
+    padding: 10px;
+    width: 100%;
+}
+.review
+{
+    display: flex;
+
+}
+.customer-div-container{
+    width: 100%;
+    margin: auto;
+}
+.customer-review
+{
+    width: 85%;
+    text-align: center;
+    margin: auto;
 }
 /*-------------------newsletter------------*/
+
+.newsletter
+{
+    margin: auto;
+    width:90%;
+}
+.marketing
+{
+    width: 100%;
+}
 .contact
 {
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 50px;
     align-items: center;
     text-align:left;
     background-color: rgb(198, 198, 230);
+    padding: 20px;
+    gap: 20px;
 }
 .title
 {
@@ -222,20 +272,21 @@ label
 }
 input
 {
-    width: 400px;
+    width:90%;
     height: 25px;
+
 }
 textarea
 {
     height: 150px;
-    width: 400px;
+    width: 90%;
 }
 .getintouch
 {
-    margin: 15px;
+    margin-left: 10px;
     padding: 10px;
-    width: 400px;
-    background-color: rgb(199, 177, 219);
+    width: 85%;
+    background-color: rgb(173, 135, 209);
     border: none;
     border-radius: 10px;
     font-size: 20px;
@@ -253,6 +304,7 @@ textarea
 .footer-para
 {
     font-size: 20px;
+    text-align: justify;
 }
 ul{
     display: flex;
