@@ -80,6 +80,7 @@ nav{
 {
     border-radius: 20px;
     height: 300px;
+    border-radius: 25px;
 }
 .buttion-action
 {
@@ -152,12 +153,15 @@ font-size: 25px;
 .button-02
 {
     padding: 10px 20px;
-    font: 20px;
+    font-size: 20px;
     margin: 20px;
-    color: rgb(162, 162, 207);
+    color: rgb(255, 255, 255);
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    background-color: rgb(196, 152, 238);
+    border: none;
+    border-radius: 10px;
 }
 .focus-container
 {
@@ -286,7 +290,7 @@ textarea
     margin-left: 10px;
     padding: 10px;
     width: 85%;
-    background-color: rgb(173, 135, 209);
+    background-color: rgb(163, 95, 228);
     border: none;
     border-radius: 10px;
     font-size: 20px;
